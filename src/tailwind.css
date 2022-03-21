@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ body{
+    padding-left: env(safe-area-inset-left,0);
+  }
+
+  .animated-things{
+    transition: all ease-in 400ms
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+
+.background-login{
+  background-position: 80% -40%;
+
+}
