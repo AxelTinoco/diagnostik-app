@@ -28,8 +28,7 @@ export const NotesAppBar = () => {
     }
     
     return (
-        <div className='flex justify-between p-4 w-full bg-black text-white'>
-            <span>Diagnostikare</span>
+        <div className='flex justify-end p-4 w-full bg-black text-white'>
 
             <input 
                 type="file" 

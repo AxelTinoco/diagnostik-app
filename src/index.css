@@ -545,6 +545,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 1rem;
 }
 
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -608,6 +612,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mr-4 {
   margin-right: 1rem;
 }
@@ -644,6 +652,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: auto;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -674,6 +686,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-48 {
   width: 12rem;
+}
+
+.w-0 {
+  width: 0px;
 }
 
 .flex-auto {
@@ -856,6 +872,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-self: center;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -940,11 +960,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(2 179 197 / var(--tw-bg-opacity));
 }
 
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#316b61\] {
   --tw-bg-opacity: 1;
   background-color: rgb(49 107 97 / var(--tw-bg-opacity));
@@ -1026,11 +1041,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-5xl {

@@ -1,7 +1,7 @@
-import { GiWorld } from 'react-icons/gi'
 import { BsCalendarPlus } from 'react-icons/bs'
 import {FiMenu} from 'react-icons/fi'
-import { JournalEntries } from './JournalEntries'
+import {IoClose} from 'react-icons/io5'
+import { DiagnosticEntries} from './DiagnosticEntries'
 import { useDispatch, useSelector } from 'react-redux'
 import { startLogout } from '../../actions/auth'
 import { startNewNote } from '../../actions/notes'
@@ -39,15 +39,15 @@ export const Sidebar = () => {
 
     return (
         <>
-            <FiMenu className='text-4xl absolute z-30 top-2 left-2' onClick={handleChangeView}/>
+            <FiMenu className={showMenu ? 'text-4xl absolute z-30 top-2 left-2 text-white': 'text-4xl absolute z-30 top-2 left-2 text-white '} onClick={handleChangeView}/>
         {
      
-            <aside className={showMenu ? " h-screen bg-[#316b61] p-4 overflow-hidden w-[70%] md:w-[30%] md:relative absolute z-50" : "hidden"}>
-            <FiMenu className='text-4xl absolute z-30 top-2 left-2' onClick={handleChangeView}/>
+            <aside className={showMenu ? " h-screen bg-[#316b61] p-4 overflow-hidden w-[70%] md:w-[30%] md:relative absolute z-50 animate__animated animate__slideInLeft" : "hidden"}>
+            <IoClose className='text-4xl absolute z-30 top-2 left-2 text-white' onClick={handleChangeView}/>
 
             <div className="flex flex-col space-y-2 md:flex-row justify-between text-white">
-                <div className="p-2 flex items-center space-x-2 justify-center text-center">
-                    <GiWorld className='text-2xl'/> <h2>{name}</h2>
+                <div className="p-2 flex items-center space-x-2 justify-center text-center mt-3">
+                     <h2>{name}</h2>
                 </div>
                 <button
                     className=" md:p-2 bg-black rounded-2xl hover:bg-white hover:text-black animated-things "
@@ -68,7 +68,7 @@ export const Sidebar = () => {
             </div>
 
 
-            <JournalEntries />
+            <DiagnosticEntries />
 
 
         </aside>

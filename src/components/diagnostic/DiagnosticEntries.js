@@ -1,8 +1,8 @@
 
 import { useSelector } from "react-redux"
-import { JournalEntry } from "./JournalEntry"
+import { DiagnosticEntry } from "./DiagnosticEntry"
 
-export const JournalEntries = () => {
+export const DiagnosticEntries = () => {
 
     
     const {notes} = useSelector(state => state.notes)
@@ -13,7 +13,7 @@ export const JournalEntries = () => {
         <div className = 'w-full h-[82%] flex flex-col mt-4 overflow-y-scroll'>
         
          {
-                notes.map(note => (<JournalEntry
+                notes.map(note => (<DiagnosticEntry
                  key={note.id} 
                  {...note}
                  />))

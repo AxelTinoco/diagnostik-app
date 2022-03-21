@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { activeNote } from '../../actions/notes';
 
 
-export const JournalEntry = ({id,body,date,title,url}) => {
+export const DiagnosticEntry = ({id,body,date,title,url}) => {
 
     const noteDate = moment(date);
     const dispatch = useDispatch()

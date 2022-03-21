@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 import { NoteScreen } from "../notes/NoteScreen"
 import { Sidebar } from "./Sidebar"
 
-export const JournalScreen = () => {
+export const DiagnosticScreen = () => {
 
     const {active} = useSelector(state => state.notes)
   

@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { Routes, Route} from "react-router-dom";
 import { login } from "../actions/auth";
 import { startLoadingNotes } from "../actions/notes";
-import { JournalScreen } from "../components/journal/JournalScreen";
+import { DiagnosticScreen } from "../components/diagnostic/DiagnosticScreen";
 import { LoadingScreen } from "../components/Loading/LoadingScreen";
 import { AuthRouter } from "./AuthRouter";
 import { PrivateRoute } from "./PrivateRoute";
@@ -57,7 +57,7 @@ export const AppRouter = () => {
 
               <Route path="/*" exact element={
                     <PrivateRoute isAuthenticated={isLoggedIn}>
-                        <JournalScreen />
+                        <DiagnosticScreen />
                     </PrivateRoute>
                 }/>
                

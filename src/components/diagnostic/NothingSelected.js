@@ -2,9 +2,9 @@ import { Player } from '@lottiefiles/react-lottie-player';
 
 export const NothingSelected = () => {
     return (
-        <div className='flex items-center justify-center w-full bg-slate-400 h-screen overflow-hidden'>
+        <div className='flex items-center justify-center w-full h-screen overflow-hidden bg-black'>
             
-<div className='w-1/2 items-center text-center '>
+<div className='w-1/2 items-center text-center text-white'>
     <h2 className='text-3xl'>Selecciona una cita</h2>
     <br />
     <p className='text-3xl'>O pon tus sintomas!</p>

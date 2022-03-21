@@ -96,10 +96,10 @@ export const FormRegisternState = ({showRegister}) => {
             :
         'hidden md:flex col-start-8 col-end-12 row-start-2 row-end-6 rounded-3xl p-4 justify-center flex-col items-center space-y-10 border-b shadow-xl animated-things'
         }>
-        { showSection ? (
+        { showSection  ? (
         
         <form 
-        className = {`hidden md:flex flex-col w-full justify-center items-center space-y-6 `}
+        className = {`flex flex-col w-full justify-center items-center space-y-6 `}
         onSubmit={showSection ? handleSubmitRegister : null}
         >
             <h2 className='text-4xl ' >Register</h2>
