@@ -25,7 +25,7 @@ export const RegisterScreen = () => {
     }
 
     return (
-        <div className="grid grid-cols-12 grid-rows-6 h-screen md:bg-pattern bg-[#02b3c5]">
+        <div className="grid grid-cols-12 grid-rows-6 h-screen md:bg-pattern bg-[#316b61]">
             <div className=" bg-register col-span-12 row-span-5 bg-cover rounded-b-[4rem] bg-top flex 
             flex-col justify-around items-center shadow-2xl 
              md:bg-cover md:col-span-6 md:row-span-6 md:rounded-r-[3rem] md:rounded-bl-none text-white ">
@@ -46,7 +46,7 @@ export const RegisterScreen = () => {
 
             </div>
 
-            <div className="col-span-12 flex p-4 justify-around text-center md:col-span-6 space-y-2">
+            <div className="col-span-12 flex p-4 justify-around text-center md:col-span-6 space-y-2 text-white">
 
                 <div className="w-1/2  flex justify-center items-center text-xl md:hidden"
                 onClick={handleShowRegister}

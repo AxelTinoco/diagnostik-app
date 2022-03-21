@@ -59,7 +59,7 @@ export const FormLoginState = ({showLogin}) => {
  
 
     return (
-        <div className={showLogin ? `flex self-center justify-self-center backdrop-blur-md absolute  rounded-3xl p-4 
+        <div className={showLogin ? `flex self-center justify-self-center  absolute bg-[#316b61]  rounded-3xl p-4 
         justify-center flex-col items-center space-y-10 shadow-xl animate__animated animate__zoomIn w-full`
             :
         'hidden md:flex col-start-8 col-end-12 row-start-2 row-end-6 rounded-3xl p-4 justify-center flex-col items-center space-y-10 border-b shadow-xl animated-things'

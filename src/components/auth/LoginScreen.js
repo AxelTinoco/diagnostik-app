@@ -25,7 +25,7 @@ export const LoginScreen = () => {
     }
 
     return (
-        <div className="grid grid-cols-12 grid-rows-6 h-screen md:bg-pattern bg-[#02b3c5]">
+        <div className="grid grid-cols-12 grid-rows-6 h-screen md:bg-pattern bg-[#316b61]">
             <div className=" bg-login col-span-12 row-span-full rounded-b-[4rem] flex 
             flex-col justify-around items-center shadow-2xl background-login
              bg-cover md:col-span-6 md:row-span-6 md:rounded-r-[1rem] md:rounded-bl-none text-white md:bg-right relative">
@@ -47,7 +47,7 @@ export const LoginScreen = () => {
 
             </div>
 
-            <div className="col-span-12 flex p-4 justify-around text-center md:col-span-6  space-y-2">
+            <div className="col-span-12 flex p-4 justify-around text-center md:col-span-6  space-y-2 text-white">
 
                 <div className="w-1/2  flex justify-center items-center text-xl md:hidden">
                    <button 
