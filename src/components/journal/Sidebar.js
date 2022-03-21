@@ -1,5 +1,6 @@
 import { GiWorld } from 'react-icons/gi'
 import { BsCalendarPlus } from 'react-icons/bs'
+import {FiMenu} from 'react-icons/fi'
 import { JournalEntries } from './JournalEntries'
 import { useDispatch, useSelector } from 'react-redux'
 import { startLogout } from '../../actions/auth'
@@ -25,14 +26,24 @@ export const Sidebar = () => {
     const handleNewNote = () => {
 
         dispatch(startNewNote())
+        setShowMenu(false)
 
+    }
+
+    const handleChangeView = () => {
+
+        setShowMenu(!showMenu)
     }
 
 
 
-
     return (
-        <aside className="h-screen bg-[#316b61]  p-4 overflow-hidden w-[60%]  ">
+        <>
+            <FiMenu className='text-4xl absolute z-30 top-2 left-2' onClick={handleChangeView}/>
+        {
+     
+            <aside className={showMenu ? " h-screen bg-[#316b61] p-4 overflow-hidden w-[70%] md:w-[30%] md:relative absolute z-50" : "hidden"}>
+            <FiMenu className='text-4xl absolute z-30 top-2 left-2' onClick={handleChangeView}/>
 
             <div className="flex flex-col space-y-2 md:flex-row justify-between text-white">
                 <div className="p-2 flex items-center space-x-2 justify-center text-center">
@@ -61,5 +72,8 @@ export const Sidebar = () => {
 
 
         </aside>
+    
+        }
+        </>
     )
 }

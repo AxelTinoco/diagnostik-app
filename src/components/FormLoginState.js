@@ -60,7 +60,7 @@ export const FormLoginState = ({showLogin}) => {
 
     return (
         <div className={showLogin ? `flex self-center justify-self-center backdrop-blur-md absolute  rounded-3xl p-4 
-        justify-center flex-col items-center space-y-10 shadow-xl animate__animated animate__zoomIn`
+        justify-center flex-col items-center space-y-10 shadow-xl animate__animated animate__zoomIn w-full`
             :
         'hidden md:flex col-start-8 col-end-12 row-start-2 row-end-6 rounded-3xl p-4 justify-center flex-col items-center space-y-10 border-b shadow-xl animated-things'
         }
@@ -69,7 +69,7 @@ export const FormLoginState = ({showLogin}) => {
             !showPhoneLogin ?
         
         <form 
-        className = {"flex flex-col p-2 justify-center items-center space-y-9"}
+        className = {"flex flex-col p-2 justify-center items-center space-y-9 w-full"}
         onSubmit={handleSubmit}
         >
             <h2 className='text-4xl text-white md:text-black ' >Login</h2>

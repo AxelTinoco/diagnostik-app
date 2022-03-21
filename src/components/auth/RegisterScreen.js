@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 export const RegisterScreen = () => {
 
-    const [changeClass] = useState(false);
+    const [showRegister, setShowRegister] = useState(false);
 
     let navigate = useNavigate()
     const handleNavigateLoginForm = () => {
@@ -14,6 +14,15 @@ export const RegisterScreen = () => {
        
     
         }
+
+    
+    const handleShowRegister = () => {
+
+
+        setShowRegister(!showRegister)
+        console.log("holi soy registro")
+
+    }
 
     return (
         <div className="grid grid-cols-12 grid-rows-6 h-screen md:bg-pattern bg-[#02b3c5]">
@@ -37,10 +46,12 @@ export const RegisterScreen = () => {
 
             </div>
 
-            <div className="col-span-12 flex p-4 justify-around text-center md:col-span-6 text-white space-y-2">
+            <div className="col-span-12 flex p-4 justify-around text-center md:col-span-6 space-y-2">
 
-                <div className="w-1/2  flex justify-center items-center text-xl md:hidden">
-                    Login <IoIosArrowForward className='ml-2' />
+                <div className="w-1/2  flex justify-center items-center text-xl md:hidden"
+                onClick={handleShowRegister}
+                >
+                    Registrarse <IoIosArrowForward className='ml-2' />
                 </div>
 
                 <div className="w-1/2 flex justify-end items-center text-xl">
@@ -54,7 +65,7 @@ export const RegisterScreen = () => {
                 </div>
             </div>
 
-            <FormRegisternState changeClass={changeClass} />
+            <FormRegisternState showRegister={showRegister} />
 
 
 

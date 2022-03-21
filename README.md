@@ -9,5 +9,18 @@ En la version actual se puede ingrersar por email y google sin problema alguno ,
 
 ### Registro por Numero e Inicio de sesion
 
-Lamentablemente la API de firebase solo contiene un registro de sms muy limitado ademas que se necesita un registro del numero previo para mandar el token como prueba de desarrollo , el estado de "phone" contiene ya el numero guardado de prueba,  solo se le pide al usuario que de click al boton de "Pedir Token" respectivamente sea cual sea la vista en la que este tanto LOGIN como en REGISTER
+Lamentablemente la API de firebase solo contiene un registro de sms muy limitado.
+Se sugiere que se use el estado que esta guardado en "phone" para pruebas de desarrollo el Token o OTP es "123456"
+
+# Si desea usar su celular le recuerdo que necesita poner la lada del pais de residencia por ejemplo :
+
+## +525538284348
+
+con esto le llegaria un token para iniciar sesion y/o registarse en el sistema
+
+### Datos
+
+Contamos con sus datos guaardados en sus sintomas en un base datos persitente en su pantalla al igual que podra ver las fechas asignadad con fotografia, titulo y detalles de sus sintomas 
+
+
 

@@ -17,7 +17,7 @@ export const JournalEntry = ({id,body,date,title,url}) => {
 
     return (
         <div 
-        className="flex bg-white my-3 rounded-lg md:flex-row flex-col relative w-full"
+        className="flex bg-white my-3 rounded-lg md:flex-row flex-col relative w-full h-72 md:h-40"
         onClick={handleEntryActive}
         >
             {

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {GoEye,GoEyeClosed} from 'react-icons/go'
 import {FcGoogle} from 'react-icons/fc'
-import {BsGithub} from 'react-icons/bs'
+import {AiFillPhone} from 'react-icons/ai'
 import validator from 'validator'
 import { useDispatch, useSelector } from 'react-redux'
 import { useForm } from '../hooks/useForm'
@@ -10,12 +10,12 @@ import { uiRemoveError, uiSetError } from '../actions/ui'
 import { startGoogleLogin, startWithEmailPasswordName } from '../actions/auth'
 import { PhoneRegister } from './PhoneRegister'
 
-export const FormRegisternState = ({changeClass}) => {
+export const FormRegisternState = ({showRegister}) => {
 
     const [view, setView] = useState(false)
     const [state, setState] = useState('password')
   
-    const [showSection, setShowSection] = useState(false);
+    const [showSection, setShowSection] = useState(true);
     const {msgError} = useSelector(state => state.ui)
     console.log(msgError)
 
@@ -89,11 +89,14 @@ export const FormRegisternState = ({changeClass}) => {
 
     
 
-
     return (
 
-        <div className={`hidden md:flex col-start-8 col-end-12 row-start-2 row-end-6 rounded-3xl p-4 justify-center flex-col items-center space-y-6 border-b shadow-xl`}>
-        { !showSection ? (
+        <div className={showRegister ? `flex self-center justify-self-center backdrop-blur-md absolute  rounded-3xl p-4 
+        justify-center flex-col items-center space-y-10 shadow-xl animate__animated animate__zoomIn w-full`
+            :
+        'hidden md:flex col-start-8 col-end-12 row-start-2 row-end-6 rounded-3xl p-4 justify-center flex-col items-center space-y-10 border-b shadow-xl animated-things'
+        }>
+        { showSection ? (
         
         <form 
         className = {`hidden md:flex flex-col w-full justify-center items-center space-y-6 `}
@@ -194,7 +197,7 @@ export const FormRegisternState = ({changeClass}) => {
                 or
         
                 <button className='mx-3' onClick={handlePhoneForm}>
-                <BsGithub className='text-3xl' />
+                <AiFillPhone className='text-3xl' />
                 </button>
         
            </div>

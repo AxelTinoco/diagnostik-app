@@ -106,6 +106,24 @@ export const requestOTP = (phoneNumber) => {
                 window.confirmationResult = confirmationResult;
             }).catch((error) => {
                 console.log(error)
+                Swal.fire({
+                
+                    title: 'Error',
+                    text: error.message,
+                    customClass: {
+                        container: 'd-flex flex-column',
+                        popup:'d-flex flex-column'
+                    },
+                    showClass: {
+                      popup: 'animate__animated animate__fadeInDown d-flex flex-column'
+                    },
+                    hideClass: {
+                      popup: 'animate__animated animate__fadeOutUp d-flex flex-column'
+                    },
+                   
+                    icon: 'error',
+                    
+            })
             })
         }
     }
@@ -131,6 +149,24 @@ export const verifyOTP = (otp,name) => {
 
             }).catch((error) => {
                 console.log(error)
+                Swal.fire({
+                
+                    title: 'Error',
+                    text: error.message,
+                    customClass: {
+                        container: 'd-flex flex-column',
+                        popup:'d-flex flex-column'
+                    },
+                    showClass: {
+                      popup: 'animate__animated animate__fadeInDown d-flex flex-column'
+                    },
+                    hideClass: {
+                      popup: 'animate__animated animate__fadeOutUp d-flex flex-column'
+                    },
+                   
+                    icon: 'error',
+                    
+            })
                 dispatch(finishLoading());
 
             })

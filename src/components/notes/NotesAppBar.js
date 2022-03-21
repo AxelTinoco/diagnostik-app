@@ -29,7 +29,7 @@ export const NotesAppBar = () => {
     
     return (
         <div className='flex justify-between p-4 w-full bg-black text-white'>
-            <span>26 de Diciembre 2021</span>
+            <span>Diagnostikare</span>
 
             <input 
                 type="file" 
